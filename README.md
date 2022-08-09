@@ -15,5 +15,5 @@
 [4] `./spam.py`                   
 
 # Social Media
-![Instagram](https://instagram.com/theslavph)
-![Telegram](thhps://telegram.me/slavph)
+[Instagram](https://instagram.com/theslavph)
+[Telegram](thhps://telegram.me/slavph)
