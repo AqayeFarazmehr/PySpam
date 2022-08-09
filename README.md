@@ -14,7 +14,7 @@
 [3] `cd PySpam`                                 
 [4] `./spam.py`                               
 
-**Termux**
+**Termux:**                    
 [1] `pkg install pacman python3 git`                          
 [2] `git clone https://github.com/SlavPH/PySpam`                             
 [3] `cd PySpam`                                 
