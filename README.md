@@ -23,3 +23,6 @@
 # Social Media
 [Instagram](https://instagram.com/theslavph)                                                
 [Telegram](https://telegram.me/slavph)
+
+# Educational purposes noly                 
+> Use this tool only for fun with permission                  
