@@ -27,7 +27,7 @@
 
 # Social Media
 [Instagram](https://instagram.com/theslavph)                                                
-[Telegram](https://telegram.me/slavph)
+[Telegram](https://telegram.me/theslavph)
 
 # Educational purposes noly                 
 > Use this tool only for fun with permission                  
