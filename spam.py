@@ -33,7 +33,7 @@ def snapp(phone):
         if "OK" in SnapRequest.text:
             print(f"{green}True: {white}Snapp{reset}")
         else:
-            pass
+            print(f"{red}False: {white}Snapp{reset}")
     except:
         pass
 
@@ -46,7 +46,7 @@ def gap(phone):
         if "OK" in GapRequest.text:
             print(f"{green}True: {white}Gap{reset}")
         else:
-            pass
+            print(f"{red}False: {white}Gap{reset}")
     except:
         pass
 
@@ -63,7 +63,7 @@ def tap30(phone):
         if "OK" in Tap30Request.text:
             print(f"{green}True: {white}Tap30{reset}")
         else:
-            pass
+            print(f"{red}False: {white}Tap30{reset}")
     except:
         pass
 
@@ -80,7 +80,7 @@ def divar(phone):
         if "SENT" in DivarRequest.text:
             print(f"{green}True: {white}Divar{reset}")
         else:
-            pass
+            print(f"{red}False: {white}Divar{reset}")
     except:
         pass
 
@@ -95,7 +95,7 @@ def bama(phone):
         if "0" in BamaRequest.text:
             print(f"{green}True: {white}Bama{reset}")
         else:
-            pass
+            print(f"{red}False: {white}Bama{reset}")
     except:
         pass
 
