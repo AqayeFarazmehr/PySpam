@@ -14,7 +14,7 @@ exec(config)
 
 
 # Clear
-os.system("clear")
+os.system("cls" if os.name == "nt" else "clear")
 
 
 
@@ -401,11 +401,11 @@ def main():
 
         #=====# New APIs #=====#
 
-            Thread(target=digikala, args=[phone]).start()    # DigiKala
+            Thread(target=digikala, args=[phone]).start()      # DigiKala
             time.sleep(0.5)
-            Thread(target=alibaba, args=[phone]).start()    # Alibaba
+            Thread(target=alibaba, args=[phone]).start()       # Alibaba
             time.sleep(0.5)
-            Thread(target=sheypoor, args=[phone]).start()       # Sheypoor
+            Thread(target=sheypoor, args=[phone]).start()      # Sheypoor
             time.sleep(0.5) 
 
 
