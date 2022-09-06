@@ -1,5 +1,22 @@
 # PySpam
 >Python OTP Spammer for Iran Numbers (+98)
+>List of APIs :              
+**-** Snapp                       
+**-** Gap                                
+**-** Tap30                               
+**-** Divar                                
+**-** Bama                                
+**-** Dedifood                                
+**-** Behtarino                                
+**-** Delino                               
+**-** Zarinplus                                
+**-** Livito                                       
+**-** Baarbaanet                                       
+**-** Bornos                                 
+**-** Komodaa                                 
+**-** DigiKala                                 
+**-** Alibaba                                  
+**-** Sheypoor                                     
 
 # Educational purposes only                  
 This tool is for educational purposes only to show you how it works, or how to make one!!                           
@@ -54,7 +71,7 @@ myData = {
 response = requests.post(myURL, headers=myHeader, json=myData)  # you can also use proxy
 print(response)
 ```
-**Sorry for bad English**
+**Sorry for bad English :)**
 
 
 # Installation
