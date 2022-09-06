@@ -5,7 +5,7 @@
 This tool is for educational purposes only to show you how it works, or how to make one!!                           
 
 # How to create one ?                                    
-So the question is how I can creat new spammer with new APIs?                                       
+So the question is how I can create new spammer with new APIs?                                       
 How can I find these headers or post url                                              
 >Here is how to do that:                                                   
 
