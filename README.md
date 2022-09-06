@@ -10,7 +10,7 @@ How can I find these headers or post url
 >Here is how to do that:                                                   
 
 **1**: Find your website or web application                                                       
-**2**: Navigate to **Registeration** page                                                             
+**2**: Navigate to **Registration** page                                                             
 **3**: Hit **f12** and open developer tools                                      
 **4**: Go to **Network** section                                               
 **5**: Then register to the website                                                      
