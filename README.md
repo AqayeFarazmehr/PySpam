@@ -11,10 +11,10 @@ How can I find these headers or post url
 
 **1**: Find your website or web application                                                       
 **2**: Navigate to **Registration** page                                                             
-**3**: Hit **f12** and open developer tools                                      
+**3**: Hit **f12** and open **developer tools**                                     
 **4**: Go to **Network** section                                               
 **5**: Then register to the website                                                      
-**6**: After that, you will see the requests in **Network** section                                                  
+**6**: After that, you will see the new requests in **Network** section                                                  
 **7**: Search for **post** request and find the request you just sent!                                               
 **8**: If you click on the request, you wiil see some data and information                                             
 
