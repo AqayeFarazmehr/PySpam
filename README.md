@@ -18,6 +18,7 @@
 **-** DigiKala                                 
 **-** Alibaba                                  
 **-** Sheypoor                                     
+**-** If you know more, commant in [Issues](https://github.com/SlavPH/PySpam/issues)
 
 # Educational purposes only                  
 This tool is for educational purposes only to show you how it works, or how to make one!!                           
