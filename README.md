@@ -21,6 +21,7 @@
 
 # Educational purposes only                  
 This tool is for educational purposes only to show you how it works, or how to make one!!                           
+Use this tool only for fun with permission                                      
 
 # How to create one ?                                    
 So the question is how I can create new spammer with new APIs?                                       
@@ -102,9 +103,6 @@ print(response)
 # Social Media
 [Instagram](https://instagram.com/theslavph)                                                
 [Telegram](https://telegram.me/theslavph)
-
-# Educational purposes noly                 
-> Use this tool only for fun with permission                  
 
 
 
