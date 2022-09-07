@@ -18,6 +18,12 @@
 **-** DigiKala                                 
 **-** Alibaba                                  
 **-** Sheypoor                                     
+**-** Esam
+**-** Namava
+**-** MyMCI
+**-** TGJU
+**-** Torob
+**-** TelWebion
 **-** If you know more, commant in [Issues](https://github.com/SlavPH/PySpam/issues)
 
 # Educational purposes only                  
