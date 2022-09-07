@@ -19,13 +19,13 @@ flash='\033[5m'         # Flash
 # Logo
 logo = (f"""
 
-{flash}{green}███████╗██████╗  █████╗ ███╗   ███╗  {blue}  ██████╗ ██╗   ██╗
-{flash}{green}██╔════╝██╔══██╗██╔══██╗████╗ ████║  {blue}  ██╔══██╗╚██╗ ██╔╝
-{flash}{white}███████╗██████╔╝███████║██╔████╔██║  {blue}  ██████╔╝ ╚████╔╝ 
-{flash}{white}╚════██║██╔═══╝ ██╔══██║██║╚██╔╝██║  {blue}  ██╔═══╝   ╚██╔╝  
-{flash}{red}███████║██║     ██║  ██║██║ ╚═╝ ██║  {blue}  ██║        ██║   
-{flash}{red}╚══════╝╚═╝     ╚═╝  ╚═╝╚═╝     ╚═╝  {blue}  ╚═╝        ╚═╝   
-{reset}                                                        
+{flash}{green}███████╗██████╗  █████╗ ███╗   ███╗  {reset}{blue}  ██████╗ ██╗   ██╗
+{flash}{green}██╔════╝██╔══██╗██╔══██╗████╗ ████║  {reset}{blue}  ██╔══██╗╚██╗ ██╔╝
+{flash}{white}███████╗██████╔╝███████║██╔████╔██║  {reset}{blue}  ██████╔╝ ╚████╔╝ 
+{flash}{white}╚════██║██╔═══╝ ██╔══██║██║╚██╔╝██║  {reset}{blue}  ██╔═══╝   ╚██╔╝  
+{flash}{red}███████║██║     ██║  ██║██║ ╚═╝ ██║  {reset}{blue}  ██║        ██║   
+{flash}{red}╚══════╝╚═╝     ╚═╝  ╚═╝╚═╝     ╚═╝  {reset}{blue}  ╚═╝        ╚═╝   
+{reset}{white}Source: {green}https://{white}github.com/{red}SlavPH/{reset}                                                        
 """)
 
 # user agents
@@ -38,8 +38,45 @@ user_agents = [
     "Mozilla/5.0 (X11; U; Linux armv61; en-US; rv:1.9.1b2pre) Gecko/20081015 Fennec/1.0a1",
     "Mozilla/5.0 (X11; U; Linux armv6l; rv 1.8.1.5pre) Gecko/20070619 Minimo/0.020",
     "Mozilla/5.0 (X11; U; Linux; en-US) AppleWebKit/527  (KHTML, like Gecko, Safari/419.3) Arora/0.10.1",
-    "Mozilla/5.0 (X11; U; Linux i586; en-US; rv:1.7.3) Gecko/20040924 Epiphany/1.4.4 (Ubuntu)"
+    "Mozilla/5.0 (X11; U; Linux i586; en-US; rv:1.7.3) Gecko/20040924 Epiphany/1.4.4 (Ubuntu)",
+    "Mozilla/5.0 (iPad; CPU OS 6_0 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Version/6.0 Mobile/10A5355d Safari/8536.25",
+    "Mozilla/5.0 (iPad; CPU OS 8_4 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) Version/8.0 Mobile/12H143 Safari/600.1.4",
+    "Mozilla/5.0 (iPad; CPU OS 8_3 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) Version/8.0 Mobile/12F69 Safari/600.1.4",
+    "Mozilla/5.0 (iPad; CPU OS 9_2_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13D15 Safari/601.1",
+    "Mozilla/5.0 (iPad; CPU OS 7_1_2 like Mac OS X) AppleWebKit/537.51.2 (KHTML, like Gecko) Version/7.0 Mobile/11D257 Safari/9537.53",
+    "Mozilla/5.0 (Linux; Android 10; JNY-LX1; HMSCore 6.6.0.332) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.105 HuaweiBrowser/12.1.0.303 Mobile Safari/537.36",
+    "Mozilla/5.0 (Linux; Android 10; JNY-LX1; HMSCore 6.6.0.312) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.105 HuaweiBrowser/12.1.0.303 Mobile Safari/537.36",
+    "Mozilla/5.0 (Linux; Android 10; HarmonyOS; JNY-AL10; HMSCore 6.6.0.312) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.105 HuaweiBrowser/12.1.2.301 Mobile Safari/537.36",
+    "Mozilla/5.0 (iPhone; CPU iPhone OS 15_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.5 Mobile/15E148 Safari/604.1",
+    "Mozilla/5.0 (iPhone; CPU iPhone OS 15_6_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.6.1 Mobile/15E148 Safari/604.1",
+    "Podcasts/1660.5 CFNetwork/1335.0.3 Darwin/21.6.0",
+    "AppleCoreMedia/1.0.0.19F77 (iPhone; U; CPU OS 15_5 like Mac OS X; nl_nl)",
+    "Mozilla/5.0 (iPhone; CPU iPhone OS 14_8_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.1.2 Mobile/15E148 Safari/604.1",
+    "Windows-AzureAD-Authentication-Provider/1.0",
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Safari/537.36 Edg/103.0.1264.62",
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.54 Safari/537.36",
+    "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.157 Safari/537.36",
+    "Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:24.0) Gecko/20100101 Firefox/24.0",
+    "Wget/1.12 (linux-gnu)",
+    "Mozilla/5.0 (X11; Linux i686) AppleWebKit/534.30 (KHTML, like Gecko) Ubuntu/10.10 Chromium/12.0.742.112 Chrome/12.0.742.112 Safari/534.30",
+    "Mozilla/5.0 (Symbian/3; Series60/5.2 NokiaN8-00/012.002; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/533.4 (KHTML, like Gecko) NokiaBrowser/7.3.0 Mobile Safari/533.4 3gpp-gba",
+    "Mozilla/5.0 (SymbianOS/9.4; Series60/5.0 NokiaN97-1/10.0.012; Profile/MIDP-2.1 Configuration/CLDC-1.1; en-us) AppleWebKit/525 (KHTML, like Gecko) WicKed/7.1.12344",
+    "Mozilla/5.0 (Linux; U; Android 4.2.2; de-de; IdeaTab S6000-H Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30 - up2015dated - Live Fußball",
+    "Mozilla/5.0 (Linux; Android 8.1.0; S60Lite Build/O11019; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/68.0.3440.91 Mobile Safari/537.36 Instagram 244.0.0.17.110 Android (27/8.1.0; 480dpi; 1080x1776; DOOGEE; S60Lite; S60Lite; mt6755; it_IT; 383877260)",
+    "Mozilla/5.0 (Linux; Android 9; KFMAWI) AppleWebKit/537.36 (KHTML, like Gecko) Silk/102.2.1 like Chrome/102.0.5005.125 Safari/537.36",
+    "Mozilla/5.0 (Linux; Android 5.1.1; KFSUWI) AppleWebKit/537.36 (KHTML, like Gecko) Silk/102.3.17 like Chrome/102.0.5005.164 Safari/537.36",
+    "Mozilla/5.0 (Linux; Android 5.1.1; KFDOWI) AppleWebKit/537.36 (KHTML, like Gecko) Silk/102.2.1 like Chrome/102.0.5005.125 Safari/537.36",
+    "Mozilla/5.0 (Linux; Android 9; KFMAWI Build/PS7324.3016N; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/102.0.5005.125 Safari/537.36 [FB_IAB/FB4A;FBAV/378.0.0.18.112;]",
+    "Mozilla/5.0 (SMART-TV; Linux; Tizen 2.4.0) AppleWebkit/538.1 (KHTML, like Gecko) SamsungBrowser/1.1 tv Safari/538.1",
+    "Mozilla/5.0 (Linux; NetCast; U) AppleWebKit/537.31 (KHTML, like Gecko) Chrome/26.0.1410.33 Safari/537.31 SmartTV/5.0",
+    "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Safari/537.36 RuxitSynthetic/1.0",
+    "Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)",
+    "Mozilla/5.0 (Linux; Android 6.0.1; Nexus 5X Build/MMB29P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.134 Mobile Safari/537.36 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)",
+    "Mozilla/5.0 (compatible; DataForSeoBot/1.0; +https://dataforseo.com/dataforseo-bot)",
+    "Mozilla/5.0 (compatible; YandexBot/3.0; +http://yandex.com/bots)",
+    "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 10.0; Win64; x64; Trident/7.0; .NET4.0C; .NET4.0E; Tablet PC 2.0; Zoom 3.6.0)"
 ]
+
 
 # Tor proxy
 # proxy = {
@@ -47,10 +84,20 @@ user_agents = [
 #     'https': 'socks5://localhost:9050'
 # }
 
-# other proxies
-proxy = {
-    'socks5' : '192.111.137.37:18762'
-}
+
+# Other proxies
+proxy_list = [
+
+    {'socks5' : '192.111.137.37:18762'},
+
+    {'socks5' : '195.201.225.104:46688'},
+
+    {'socks5' : '43.157.51.235:443'},
+
+    {'socks5' : '192.111.129.145:16894'},
+
+    {'socks5' : '192.111.139.163:19404'}
+]
 
 # Headers
 SnappHeader = {
@@ -319,6 +366,126 @@ BehtarinoHeader = {
     "Origin": "https://behtarino.com",
     "Connection": "keep-alive",
     "Referer": "https://behtarino.com/",
+    "Sec-Fetch-Dest": "empty",
+    "Sec-Fetch-Mode": "cors",
+    "Sec-Fetch-Site": "same-site",
+    "DNT": "1",
+    "Sec-GPC": "1",
+    "TE": "trailers"
+}
+
+EsamHeader = {
+    "Host": "api.esam.ir",
+    "User-Agent": "".join(random.choices(user_agents)),
+    "Accept": "*/*",
+    "Accept-Language": "en-US,en;q=0.5",
+    "Accept-Encoding": "gzip, deflate, br",
+    "Content-Type": "application/json",
+    "Content-Length": "99",
+    "Origin": "https://esam.ir",
+    "Connection": "keep-alive",
+    "Referer": "https://esam.ir/",
+    "Sec-Fetch-Dest": "empty",
+    "Sec-Fetch-Mode": "cors",
+    "Sec-Fetch-Site": "same-site",
+    "DNT": "1",
+    "Sec-GPC": "1",
+    "TE": "trailers"
+}
+
+NamavaHeader = {
+    "Host": "www.namava.ir",
+    "User-Agent": "".join(random.choices(user_agents)), 
+    "Accept": "application/json, text/plain, */*",
+    "Accept-Language": "en-US,en;q=0.5",
+    "Accept-Encoding": "gzip, deflate, br",
+    "Content-Type": "application/json;charset=utf-8",
+    "X-Application-Type": "WebClient",
+    "X-Client-Version": "2.35.0",
+    "X-Auth-Token": "8145AC8B17A2B4614105A7C06016EACD207361913262CACFC07D4CFC0E70C9E855AEFC8A32AE4EF76F38FB758DEFF8AD15E86C2F5D4A69FF5B5F043E213EE912E7DC820F6468369DCF507100D01829EECFEDD3A30EE31F244581ED84962835590E873BDA57EB902ACB3A409138CF772B216F1D4DD3A29984E12C69D60D8588764B182C642AD4CE4BD746AD734D10F591DE308CBC1BB65E0C36168676AF79DB4BA07B2D68ABAC998FB6704FBE7D8188FE70646B45F2F7AE7004D771AA36240584B226BCF82F09D5E4A057874293214DE0F6FBFB1C8A7DE87904318D08EB41A6AB8739905EE1B0F2978D266593F2CF6B3C82059C7376DE20283B43DC0E059E094C",
+    "Content-Length": "28",
+    "Origin": "https://www.namava.ir",
+    "Connection": "keep-alive",
+    "Referer": "https://www.namava.ir/auth/register-phone",
+    # "Cookie": """use_legacy_player=false; dv-v3={"g":"desktop","platform":null}; guest_token=8145AC8B17A2B4614105A7C06016EACD207361913262CACFC07D4CFC0E70C9E855AEFC8A32AE4EF76F38FB758DEFF8AD15E86C2F5D4A69FF5B5F043E213EE912E7DC820F6468369DCF507100D01829EECFEDD3A30EE31F244581ED84962835590E873BDA57EB902ACB3A409138CF772B216F1D4DD3A29984E12C69D60D8588764B182C642AD4CE4BD746AD734D10F591DE308CBC1BB65E0C36168676AF79DB4BA07B2D68ABAC998FB6704FBE7D8188FE70646B45F2F7AE7004D771AA36240584B226BCF82F09D5E4A057874293214DE0F6FBFB1C8A7DE87904318D08EB41A6AB8739905EE1B0F2978D266593F2CF6B3C82059C7376DE20283B43DC0E059E094C; anonymous_login=true; auth_return=eyJwYXRobmFtZSI6Ii8ifQ""",
+    "Sec-Fetch-Dest": "empty",
+    "Sec-Fetch-Mode": "cors",
+    "Sec-Fetch-Site": "same-origin",
+    "DNT": "1",
+    "Sec-GPC": "1",
+    "TE": "trailers"
+}
+
+MyMCIHeader = {
+    "Host": "api-ebcom.mci.ir",
+    "User-Agent": "".join(random.choices(user_agents)), 
+    "Accept": "application/json, text/plain, */*",
+    "Accept-Language": "en-US,en;q=0.5",
+    "Accept-Encoding": "gzip, deflate, br",
+    "Content-Type": "application/json",
+    "clientSecret": "mymci",
+    # "clientId": "9f740bf9-817a-4539-bb1d-43790fc93b75",
+    "scope": "mymciGroup",
+    "Content-Length": "23",
+    "Origin": "https://my.mci.ir",
+    "Connection": "keep-alive",
+    "Referer": "https://my.mci.ir/",
+    "Sec-Fetch-Dest": "empty",
+    "Sec-Fetch-Mode": "cors",
+    "Sec-Fetch-Site": "same-site",
+    "DNT": "1",
+    "Sec-GPC": "1",
+    "TE": "trailers"
+}
+
+tgjuHeader = {
+    "Host": "dashboard-api.accessban.com",
+    "User-Agent": "".join(random.choices(user_agents)), 
+    "Accept": "*/*",
+    "Accept-Language": "en-US,en;q=0.5",
+    "Accept-Encoding": "gzip, deflate, br",
+    "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8",
+    "Content-Length": "18",
+    "Origin": "https://www.tgju.org",
+    "Connection": "keep-alive",
+    "Referer": "https://www.tgju.org/",
+    "Sec-Fetch-Dest": "empty",
+    "Sec-Fetch-Mode": "cors",
+    "Sec-Fetch-Site": "cross-site",
+    "DNT": "1",
+    "Sec-GPC": "1"
+}
+
+TorobHeader = {
+    "Host": "api.torob.com",
+    "User-Agent": "".join(random.choices(user_agents)), 
+    "Accept": "*/*",
+    "Accept-Language": "en-US,en;q=0.5",
+    "Accept-Encoding": "gzip, deflate, br",
+    "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8",
+    "Origin": "https://torob.com",
+    "Connection": "keep-alive",
+    "Referer": "https://torob.com/",
+    "Cookie": "abtest=next_pwa",
+    "Sec-Fetch-Dest": "empty",
+    "Sec-Fetch-Mode": "cors",
+    "Sec-Fetch-Site": "same-origin",
+    "DNT": "1",
+    "Sec-GPC": "1",
+    "TE": "trailers",
+}
+
+TelWebionHeader = {
+    "Host": "gateway.telewebion.com",
+    "User-Agent": "".join(random.choices(user_agents)), 
+    "Accept": "application/json, text/plain, */*",
+    "Accept-Language": "en-US,en;q=0.5",
+    "Accept-Encoding": "gzip, deflate, br",
+    "Content-Type": "application/json;charset=utf-8",
+    "Content-Length": "56",
+    "Origin": "https://user.telewebion.com",
+    "Connection": "keep-alive",
+    "Referer": "https://user.telewebion.com/",
     "Sec-Fetch-Dest": "empty",
     "Sec-Fetch-Mode": "cors",
     "Sec-Fetch-Site": "same-site",
