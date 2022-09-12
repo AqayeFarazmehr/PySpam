@@ -122,14 +122,7 @@ print(response)
 **[2]** `git clone https://github.com/SlavPH/PySpam`                             
 **[3]** `cd PySpam`               
 **[4]** `chmod +x *`                  
-**[5]** `./spam.py`                                                                  
-
-**Termux:**                    
-**[1]** `pkg install python3 git`                               
-**[2]** `git clone https://github.com/SlavPH/PySpam`                             
-**[3]** `cd PySpam`               
-**[4]** `chmod +x *`                  
-**[5]** `./spam.py`                                        
+**[5]** `./spam.py`                                                                                                         
 
 ---
 ``` bash
