@@ -4,12 +4,15 @@ Python OTP Spammer for Iran Numbers (+98)
 
 # What is new ?
 + 4 new API added                       
-+ IP address will reset every 5 thread
-+ This tool only works with **tor**
++ IP address will reset every 5 thread 
++ This tool only works with **tor**                          
+
+# Run tor
+You can tun tor in terminal with:
 ```
 tor
 ```
-Or 
+Or with: 
 ```
 Sudo tor
 ```
