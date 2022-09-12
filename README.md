@@ -9,11 +9,11 @@ Python OTP Spammer for Iran Numbers (+98)
 
 # Run tor
 You can tun tor in terminal with:
-```
+``` bash
 tor
 ```
 Or with: 
-```
+``` bash
 sudo tor
 ```
 
@@ -69,26 +69,26 @@ How can I find these headers or post url
 **8**: If you click on the request, you wiil see some data and information                                             
 
 **Header**: You can find your request header in **headers** section, turn on the **row** option and copy your header and create a variable for that
-```
+``` python
 myHeader = {
     your header here    # you need to edit your header and change it to dictionary
 }
 ```
 
 **URL**: In the **Headers** section, at the top, you will see a **post url**, that is your url, copy it and create a variable for that                     
-```
+``` python
 myURL = "your url here"
 ```
 
 **Data**: In the **request** section, you can see your **Json** data, turn on the **row** option and copy your json and create a variable for that
-```
+``` python
 myData = {
     your data here
 }
 ```
 
 **Make request**: The final step is making a post request
-```
+``` python
 import requests
 
 myHeader = {
