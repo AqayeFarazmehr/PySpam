@@ -129,7 +129,8 @@ print(response)
 **[4]** `chmod +x *`                  
 **[5]** `./spam.py`                                        
 
-```
+---
+``` bash
 git clone https://github.com/SlavPH/PySpam && cd PySpam && chmod +x *
 ```
 
