@@ -10,7 +10,7 @@ Python OTP Spammer for Iran Numbers (+98)
 
 
 # Run tor
-You can tun tor in terminal with:
+You can run tor in terminal with:
 ``` bash
 tor
 ```
