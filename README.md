@@ -1,7 +1,13 @@
 # PySpam
 >Python OTP Spammer for Iran Numbers (+98)                           
->List of APIs :                                             
-           
+---
+# What is new ?
++ 4 new API added                       
++ IP address will reset every 5 thread
+
+---
+List of APIs :                                             
+   
 **-** Snapp                       
 **-** Gap                                
 **-** Tap30                               
@@ -23,9 +29,13 @@
 **-** MyMCI                                    
 **-** TGJU                                    
 **-** Torob                                    
-**-** TelWebion                                    
+**-** TelWebion   
+**-** Ponisha                          
+**-** Salamcinama                     
+**-** Karnaval                          
+**-** Kanape                             
 **-** If you know more, commant in [Issues](https://github.com/SlavPH/PySpam/issues)
-
+---
 ![PySpam](https://github.com/SlavPH/PySpam/blob/main/PySpam.png)
 
 # Educational purposes only                  
@@ -92,15 +102,14 @@ print(response)
 **[3]** `cd PySpam`               
 **[4]** `chmod +x *`                  
 **[5]** `./spam.py`                                            
-
+---
 **pacman:**                             
 **[1]** `sudo pacman -S python3 git python-pip`                               
 **[2]** `git clone https://github.com/SlavPH/PySpam`                             
 **[3]** `cd PySpam`               
 **[4]** `chmod +x *`                  
-**[5]** `./spam.py`                                            
-                            
-
+**[5]** `./spam.py`                                                                  
+---
 **Termux:**                    
 **[1]** `pkg install python3 git`                               
 **[2]** `git clone https://github.com/SlavPH/PySpam`                             
