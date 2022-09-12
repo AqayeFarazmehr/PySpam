@@ -114,21 +114,24 @@ print(response)
 **[3]** `cd PySpam`               
 **[4]** `chmod +x *`                  
 **[5]** `./spam.py`                                            
----
+
 **pacman:**                             
 **[1]** `sudo pacman -S python3 git python-pip`                               
 **[2]** `git clone https://github.com/SlavPH/PySpam`                             
 **[3]** `cd PySpam`               
 **[4]** `chmod +x *`                  
 **[5]** `./spam.py`                                                                  
----
+
 **Termux:**                    
 **[1]** `pkg install python3 git`                               
 **[2]** `git clone https://github.com/SlavPH/PySpam`                             
 **[3]** `cd PySpam`               
 **[4]** `chmod +x *`                  
-**[5]** `./spam.py`                                            
+**[5]** `./spam.py`                                        
 
+```
+git clone https://github.com/SlavPH/PySpam && cd PySpam && chmod +x *
+```
 
 # Social Media
 [Instagram](https://instagram.com/theslavph)                                                
