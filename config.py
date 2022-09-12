@@ -192,7 +192,7 @@ BamaHeader = {
     "x-requested-with": "XMLHttpRequest"
 }
 
-DigiKalaHeader = {
+DigiKalaHeader = { 
     "Host": "api.digikala.com",
     "User-Agent": "".join(random.choices(user_agents)),
     "Accept": "application/json, text/plain, */*",
