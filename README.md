@@ -6,6 +6,8 @@ Python OTP Spammer for Iran Numbers (+98)
 + 4 new API added                       
 + IP address will reset every 5 threads
 + This tool only works with **tor**                          
++ THIS VERSION IS NOT WORKING ON TERMUX! TRY [PYSpamTermux](https://github.com/SlavPH/PySpamTermux/)
+
 
 # Run tor
 You can tun tor in terminal with:
