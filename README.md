@@ -1,11 +1,19 @@
-# PySpam
+# PySpam                               
 Python OTP Spammer for Iran Numbers (+98)                           
----
+
+
 # What is new ?
 + 4 new API added                       
 + IP address will reset every 5 thread
++ This tool only works with **tor**
+```
+tor
+```
+Or 
+```
+Sudo tor
+```
 
----
 List of APIs :                                             
    
 **-** Snapp                       
@@ -35,7 +43,8 @@ List of APIs :
 **-** Karnaval                          
 **-** Kanape                             
 **-** If you know more, commant in [Issues](https://github.com/SlavPH/PySpam/issues)
----
+
+
 ![PySpam](https://github.com/SlavPH/PySpam/blob/main/PySpam.png)
 
 # Educational purposes only                  
