@@ -78,26 +78,28 @@ user_agents = [
 ]
 
 
-# Tor proxy
-# proxy = {
-#     'http': 'socks5://localhost:9050',
-#     'https': 'socks5://localhost:9050'
-# }
+#Tor proxy
+tor = {
+    'http': 'socks5://localhost:9050',
+    'https': 'socks5://localhost:9050'
+}
 
 
 # Other proxies
-proxy_list = [
+# proxy_list = [
 
-    {'socks5' : '192.111.137.37:18762'},
+#     {'socks5' : '192.111.137.37:18762'},
 
-    {'socks5' : '195.201.225.104:46688'},
+#     {'socks5' : '195.201.225.104:46688'},
 
-    {'socks5' : '43.157.51.235:443'},
+#     {'socks5' : '43.157.51.235:443'},
 
-    {'socks5' : '192.111.129.145:16894'},
+#     {'socks5' : '192.111.129.145:16894'},
 
-    {'socks5' : '192.111.139.163:19404'}
-]
+#     {'socks5' : '192.111.139.163:19404'}
+# ]
+
+
 
 # Headers
 SnappHeader = {
@@ -492,4 +494,83 @@ TelWebionHeader = {
     "DNT": "1",
     "Sec-GPC": "1",
     "TE": "trailers"
+}
+
+PonishaHeader = {
+    "Host": "ponisha.ir",
+    "User-Agent": "".join(random.choices(user_agents)),
+    "Accept": "application/json, application/json;q=0.8, text/plain;q=0.5, */*;q=0.2",
+    "Accept-Language": "en-US,en;q=0.5",
+    "Accept-Encoding": "gzip, deflate, br",
+    "X-Requested-With": "rest.js",
+    "Content-Type": "application/json",
+    "X-CSRF-TOKEN": "VWvk1GfoIf0LxzJox6JROvcLqHwWQXMXS4DToE3N",
+    "P-TEXTAREA": "undefined",
+    "Content-Length": "37",
+    "Origin": "https://ponisha.ir",
+    "Connection": "keep-alive",
+    "Referer": "https://ponisha.ir/",
+    "Sec-Fetch-Dest": "empty",
+    "Sec-Fetch-Mode": "cors",
+    "Sec-Fetch-Site": "same-origin",
+    "DNT": "1",
+    "Sec-GPC": "1",
+    "TE": "trailers",
+}
+
+SalamcinamaHeader = {
+    "Host": "api.salamcinama.ir",
+    "User-Agent": "".join(random.choices(user_agents)),
+    "Accept": "application/json, text/plain, */*",
+    "Accept-Language": "en-US,en;q=0.5",
+    "Accept-Encoding": "gzip, deflate, br",
+    "Content-Type": "application/json",
+    "Content-Length": "73",
+    "Origin": "https://www.salamcinama.ir",
+    "Connection": "keep-alive",
+    "Referer": "https://www.salamcinama.ir/",
+    "Sec-Fetch-Dest": "empty",
+    "Sec-Fetch-Mode": "cors",
+    "Sec-Fetch-Site": "same-site",
+    "DNT": "1",
+    "Sec-GPC": "1",
+    "TE": "trailers"
+}
+
+KarnavalHeader = {
+    "Host": "api.karnaval.ir",
+    "User-Agent": "".join(random.choices(user_agents)),
+    "Accept": "application/json",
+    "Accept-Language": "en-US,en;q=0.5",
+    "Accept-Encoding": "gzip, deflate, br",
+    "Content-Type": "application/json",
+    "Content-Length": "106",
+    "Origin": "https://www.karnaval.ir",
+    "Sec-Fetch-Dest": "empty",
+    "Sec-Fetch-Mode": "cors",
+    "Sec-Fetch-Site": "same-site",
+    "DNT": "1",
+    "Sec-GPC": "1",
+    "Referer": "https://www.karnaval.ir/",
+    "Connection": "keep-alive",
+    "TE": "trailers",
+}
+
+KanapeHeader = {
+    "Host": "api.kanape.ir",
+    "User-Agent": "".join(random.choices(user_agents)),
+    "Accept": "application/json, text/plain, */*",
+    "Accept-Language": "en-US,en;q=0.5",
+    "Accept-Encoding": "gzip, deflate, br",
+    "Content-Type": "application/json",
+    "x-platform": "0",
+    "Content-Length": "24",
+    "Origin": "https://kanape.ir",
+    "Connection": "keep-alive",
+    "Referer": "https://kanape.ir/",
+    "Sec-Fetch-Dest": "empty",
+    "Sec-Fetch-Mode": "cors",
+    "Sec-Fetch-Site": "same-site",
+    "DNT": "1",
+    "Sec-GPC": "1"
 }
