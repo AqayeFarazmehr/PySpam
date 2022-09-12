@@ -110,6 +110,12 @@ print(response)
 
 
 # Installation
+First install requests:
+```bash
+pip install requests
+```
+
+
 **apt:**                                  
 **[1]** `sudo apt install python3 git python-pip`                               
 **[2]** `git clone https://github.com/SlavPH/PySpam`                             
