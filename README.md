@@ -17,7 +17,7 @@ Or with:
 sudo tor
 ```
 
-List of APIs :                                             
+# List of APIs :                                             
    
 **-** Snapp                       
 **-** Gap                                
