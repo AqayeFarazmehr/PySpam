@@ -14,7 +14,7 @@ tor
 ```
 Or with: 
 ```
-Sudo tor
+sudo tor
 ```
 
 List of APIs :                                             
